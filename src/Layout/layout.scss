@@ -1,0 +1,33 @@
+.sidebar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 0px rgba(1,1,1,1);
+
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+      color: #fff;
+    }
+
+    &.active {
+      svg {
+        color: #04bf74;
+      }
+    }
+    &:hover{
+      svg{
+        // opacity: 0;
+        color: #04bf74;
+      }
+    }
+    margin: 30px;
+  }
+
+}

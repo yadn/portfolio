@@ -1,0 +1,39 @@
+.intro {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow-y: scroll;
+
+  .textbox {
+    max-width: 50%;
+    padding: 20px 30px;
+
+    .name {
+      font-size: 5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 2.2rem;
+      font-weight: normal;
+      color: #7182a7;
+
+      .profession {
+        color: #acacac;
+      }
+    }
+  }
+
+
+  svg {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    max-width: 650px;
+    min-width: 250px;
+  }
+
+}
