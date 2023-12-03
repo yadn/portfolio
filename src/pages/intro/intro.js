@@ -1,8 +1,9 @@
 import './intro.scss'
 import React from 'react'
-import EngineerSVG from '../assets/images/engineer.js'
+import EngineerSVG from '../../assets/images/engineer.js'
 
 const Intro = () => {
+  
   return (<>
 
     <div className='intro'>

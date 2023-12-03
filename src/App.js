@@ -1,17 +1,18 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout/layout'
-import Intro from './intro/intro'
-import Contact from './contact/contact';
+import Layout from './pages/Layout/layout'
+import Intro from './pages/intro/intro'
+import Work from './pages/work/work';
+import Education from './pages/education/Education';
 
 function App() {
   return (
     <Routes>
-      <Route path='/portfolio/' element={<Layout />}>
+      <Route path='/portfolio/' exact element={<Layout />}>
         <Route index element={<Intro />}></Route>
-        <Route path='work' element={<>Add work experiences here</>}></Route>
-        <Route path='contact' element={<Contact />}></Route>
-        <Route path='track' element={<>Add ip detection</>}></Route>
+        <Route path='work' element={<Work/>}></Route>
+        <Route path='education' element={<Education />}></Route>
+        {/* <Route path='track' element={<>Add ip detection</>}></Route> */}
       </Route>
     </Routes>
   )

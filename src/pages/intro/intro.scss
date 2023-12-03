@@ -1,0 +1,68 @@
+.intro {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow-y: scroll;
+
+  .textbox {
+    max-width: 50%;
+    padding: 20px 30px;
+
+    .name {
+      font-size: 5rem;
+      font-family: 'openSans medium';
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 2rem;
+      font-weight: normal;
+      color: #9d968b;
+
+      .profession {
+        color: #555555;
+      }
+    }
+  }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+  
+      50% {
+        transform: translateY(8px);
+      }
+  
+      // 66%{
+      //   transform: translateY(6px);
+      // }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+  svg {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    max-width: 650px;
+    min-width: 300px;
+    min-height: 300px;
+    animation: float 2.5s ease-in-out infinite;
+  }
+
+}
+
+@media (0px <= width <= 840px) {
+  .intro{
+    flex-direction: column;
+    justify-content: unset;
+    .textbox{
+      max-width: unset;
+    }
+  }
+  
+}
