@@ -5,7 +5,7 @@ const Card = (props) => {
 
   return (
     <div className={`card ${props.className}`}>
-      <div className="card-icon">{props.icon}</div>
+      <div className={`card-icon ${props.className}`}>{props.icon}</div>
       <div className="card-description">
         <div className="topBar">
           <div className="left">
