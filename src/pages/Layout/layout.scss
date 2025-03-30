@@ -1,3 +1,4 @@
+@import '../../variables';
 .sidebar {
   width: 100vw;
   display: flex;
@@ -28,6 +29,11 @@
       }
     }
     margin: 30px;
+  }
+  .dark-mode-switch{
+    position: absolute;
+    right: 10px;
+    top: 5px;
   }
 
 }

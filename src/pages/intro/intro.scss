@@ -1,10 +1,11 @@
+@import '../../variables';
 .intro {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   .textbox {
     max-width: 50%;
@@ -19,10 +20,10 @@
     .description {
       font-size: 2rem;
       font-weight: normal;
-      color: #9d968b;
+      color: var(--text-primary);
 
       .profession {
-        color: #555555;
+        color: var(--highlight);
       }
     }
   }

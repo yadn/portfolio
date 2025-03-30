@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
   margin: 0;
   font-family: 'openSans', 'SF', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,17 +7,26 @@ body {
     sans-serif;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
-  background-color: #FBF7F0;
-  color: #555555;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  background-color: var(--bg-color);
+  /* Dark background */
+  color: var(--text-primary);
+  /* Light text color */
 }
 
 html,
-body, #root {
+body,
+#root {
   margin: 0;
   height: 100%;
 }
 
-#root{
+#root {
   display: flex;
   flex-direction: column;
 }
@@ -25,8 +36,8 @@ code {
     monospace;
 }
 
-@media (0px <= width <= 840px) {
-  html{
+@media (0px <=width <=840px) {
+  html {
     font-size: 12px;
   }
 }

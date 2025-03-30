@@ -1,33 +1,63 @@
 import { faBriefcase, faGraduationCap, faHouseChimneyUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { NavLink, Outlet } from "react-router-dom";
+import Intro from '../intro/intro'
+import WorkEducation from '../work/workEducation';
 import './layout.scss'
 
 const Sidebar = () => {
+  const [isDarkMode, setDarkMode] = React.useState(false);
+
+  const toggleDarkMode = (checked: boolean) => {
+    setDarkMode(checked);
+    if (checked) {
+      document.body.classList.add('dark-mode');
+      document.documentElement.setAttribute("data-theme", "dark")
+    } else {
+      document.body.classList.remove('dark-mode');
+      document.documentElement.setAttribute("data-theme", "light")
+    }
+  };
+  
   return (
-    <nav className="sidebar">
-      <NavLink to={'/portfolio/'} end className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-        <FontAwesomeIcon icon={faHouseChimneyUser} />
-      </NavLink>
-      <NavLink to={'/portfolio/work'} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-        <FontAwesomeIcon icon={faBriefcase} />
-      </NavLink>
-      <NavLink to={'/portfolio/education'} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-        <FontAwesomeIcon icon={faGraduationCap} />
-      </NavLink>
-      {/* <NavLink to={'/portfolio/track'} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-        <FontAwesomeIcon icon={faCompass} className="fa-spin" />
-      </NavLink> */}
-    </nav>
+      <nav className="sidebar">
+        {/* Use anchor links to scroll to sections */}
+        <a href="#intro" className="nav-link">
+          <FontAwesomeIcon icon={faHouseChimneyUser} />
+        </a>
+        <a href="#workEducation" className="nav-link">
+          <FontAwesomeIcon icon={faBriefcase} />
+        </a>
+        <div className="dark-mode-switch">
+          <DarkModeSwitch
+            style={{ marginTop: '20px' }}
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+            size={40}
+          />
+        </div>
+      </nav>
   )
 }
 
 const Layout = () => {
+
   return (
     <>
+
       <Sidebar />
-      <Outlet/>
+      <div className="content">
+
+        {/* Add IDs to sections for scrolling */}
+        <div id="intro">
+          <Intro />
+        </div>
+        <div id="workEducation">
+          <WorkEducation />
+        </div>
+      </div>
     </>
   )
 }
