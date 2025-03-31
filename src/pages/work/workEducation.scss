@@ -14,7 +14,7 @@
         // height: 100px;
     }
 
-    .vertical-timeline-element-date{
+    .vertical-timeline-element-date {
         color: var(--timeline-color);
     }
 
@@ -48,34 +48,50 @@
             color: var(--text-secondary);
         }
 
-        ul{
+        ul {
             margin-top: 40px;
         }
-        [class^="icon-info"]{
-            position: absolute;
-            right: 10px;
-            top: 0px;
+
+        .header {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            width: 100px;
-            height: 100px;
-            background-color: transparent;
-            // border-radius: 50%;
-            // box-shadow: 0 2px 2px var(--card-border);
-            // margin: 0 auto;
+            margin-bottom: 10px;
 
-            svg {
-                width: 80px;
-                height: auto;
+            .text-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
-            &.icon-info--iitbhu, &.icon-info--iitb{
-                svg * {
-                    fill: var(--text-primary)
+            [class^="icon-info"] {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                background-color: transparent;
+
+                svg {
+                    width: 80px;
+                    height: auto;
                 }
-            }
 
+                &.icon-info--enphase, 
+                &.icon-info--tata{
+                    height: 30px;
+                }
+
+                &.icon-info--iitbhu,
+                &.icon-info--iitb {
+                    svg * {
+                        fill: var(--text-primary)
+                    }
+                }
+
+            }
         }
+
     }
 }
