@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0b9bccc8.css",
-    "main.js": "/portfolio/static/js/main.82d75747.js",
+    "main.css": "/portfolio/static/css/main.c6a7e7cf.css",
+    "main.js": "/portfolio/static/js/main.5c1e89d9.js",
     "static/media/SF-Pro-Display-Regular.otf": "/portfolio/static/media/SF-Pro-Display-Regular.d95919824936a9bf4051.otf",
     "static/media/JetBrainsMono-Regular.ttf": "/portfolio/static/media/JetBrainsMono-Regular.93b40005892466035ab0.ttf",
     "static/media/iitbhu.png": "/portfolio/static/media/iitbhu.6ed51689c1346c85819a.png",
     "static/media/GoogleSans-Regular.ttf": "/portfolio/static/media/GoogleSans-Regular.bec0591b6a291c3ca895.ttf",
     "static/media/GoogleSans-Medium.ttf": "/portfolio/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/GoogleSans-Bold.ttf": "/portfolio/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
+    "static/media/SplineSansMono-Regular.ttf": "/portfolio/static/media/SplineSansMono-Regular.4dddb851647a68cdca1e.ttf",
     "index.html": "/portfolio/index.html",
-    "main.0b9bccc8.css.map": "/portfolio/static/css/main.0b9bccc8.css.map",
-    "main.82d75747.js.map": "/portfolio/static/js/main.82d75747.js.map"
+    "main.c6a7e7cf.css.map": "/portfolio/static/css/main.c6a7e7cf.css.map",
+    "main.5c1e89d9.js.map": "/portfolio/static/js/main.5c1e89d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b9bccc8.css",
-    "static/js/main.82d75747.js"
+    "static/css/main.c6a7e7cf.css",
+    "static/js/main.5c1e89d9.js"
   ]
 }
