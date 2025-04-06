@@ -8,11 +8,11 @@ import WorkEducation from '../work/workEducation';
 import './layout.scss'
 
 const Sidebar = () => {
-  const [isDarkMode, setDarkMode] = React.useState(false);
+  const [isDarkMode, setDarkMode] = React.useState(true);
 
   const toggleDarkMode = (checked: boolean) => {
     setDarkMode(checked);
-    if (checked) {
+    if (!checked) {
       document.body.classList.add('dark-mode');
       document.documentElement.setAttribute("data-theme", "dark")
     } else {
@@ -36,6 +36,8 @@ const Sidebar = () => {
             checked={isDarkMode}
             onChange={toggleDarkMode}
             size={40}
+            sunColor="#edaa0e"
+            moonColor="black"
           />
         </div>
       </nav>

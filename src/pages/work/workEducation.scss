@@ -22,7 +22,7 @@
     .vertical-timeline-element-icon.shadow-size-small {
         background-color: var(--timeline-color);
         border: 2px solid var(--timeline-color);
-        box-shadow: 0 2px 2px var(--timeline-color);
+        box-shadow: unset;
 
         .vertical-timeline-element-icon-content {
             color: var(--icon-color);
@@ -34,7 +34,8 @@
         background-color: var(--card-bg);
         color: var(--card-text);
         border: var(--card-border) 1px solid;
-        box-shadow: 0 2px 2px var(--card-border);
+        box-shadow: unset;
+        border-radius: 10px;
 
         .vertical-timeline-element-content-arrow {
             border-right: var(--card-border) 10px solid;
