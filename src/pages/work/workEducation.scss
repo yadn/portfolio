@@ -14,9 +14,7 @@
         // height: 100px;
     }
 
-    .vertical-timeline-element-date {
-        color: var(--timeline-color);
-    }
+    
 
 
     .vertical-timeline-element-icon.shadow-size-small {
@@ -47,6 +45,12 @@
 
         .vertical-timeline-element-subtitle {
             color: var(--text-secondary);
+        }
+
+        .vertical-timeline-element-date {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--timeline-color);
         }
 
         ul {
