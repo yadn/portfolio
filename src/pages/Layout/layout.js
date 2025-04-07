@@ -1,11 +1,11 @@
-import { faBriefcase, faGraduationCap, faHouseChimneyUser } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faHouseChimneyUser, faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { NavLink, Outlet } from "react-router-dom";
 import Intro from '../intro/intro'
 import WorkEducation from '../work/workEducation';
 import './layout.scss'
+import Projects from "../projects/projects";
 
 const Sidebar = () => {
   const [isDarkMode, setDarkMode] = React.useState(true);
@@ -30,6 +30,9 @@ const Sidebar = () => {
         <a href="#workEducation" className="nav-link">
           <FontAwesomeIcon icon={faBriefcase} />
         </a>
+        <a href="#projects" className="nav-link">
+          <FontAwesomeIcon icon={faCode} />
+        </a>
         <div className="dark-mode-switch">
           <DarkModeSwitch
             style={{ marginTop: '20px' }}
@@ -53,11 +56,14 @@ const Layout = () => {
       <div className="content">
 
         {/* Add IDs to sections for scrolling */}
-        <div id="intro">
+        <div id="intro" className="intro">
           <Intro />
         </div>
         <div id="workEducation">
           <WorkEducation />
+        </div>
+        <div id="projects" className="projects">
+          <Projects />
         </div>
       </div>
     </>
