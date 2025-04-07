@@ -10,7 +10,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   scroll-behavior: smooth;
-  text-shadow: 0.8px 0.8px 1.5px rgba(0, 0, 0, 0.15);
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 body.dark-mode {
@@ -18,7 +18,7 @@ body.dark-mode {
   /* Dark background */
   color: var(--text-primary);
   /* Light text color */
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2)
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.2)
 }
 
 html,
