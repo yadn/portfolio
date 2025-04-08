@@ -7,7 +7,8 @@
   // overflow-y: scroll;
 
   .textbox {
-    max-width: 50%;
+    // display: block;
+    width: 50%;
     padding: 20px 30px;
 
     .name {
@@ -19,12 +20,30 @@
       font-size: 1.5rem;
       font-weight: normal;
       color: var(--text-primary);
+      height: 3rem;
 
       .profession {
         color: var(--highlight);
       }
+
+      .cursor{
+        display: inline-block;
+        position: relative;
+        bottom: -0.2rem;
+        width: 0.8rem;
+        height: 1.8rem;
+        background-color: var(--text-secondary);
+        margin-left: 5px;
+        animation: blink 1s step-end infinite;
+      }
     }
   }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+  }
+
 
     @keyframes float {
       0% {
@@ -52,6 +71,13 @@
     min-height: 300px;
     animation: float 2.5s ease-in-out infinite;
   }
+  
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
 
 }
 
@@ -59,7 +85,9 @@
   .intro{
     flex-direction: column;
     justify-content: unset;
+    align-items: unset;
     .textbox{
+      width: unset;
       max-width: unset;
     }
   }

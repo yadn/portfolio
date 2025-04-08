@@ -37,14 +37,27 @@
             margin-bottom: 15px;
         }
 
+        .project-tech{
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
         .project-link {
-            color: var(--highlight);
+            // color: var(--highlight);
             text-decoration: none;
             transition: color 0.3s ease;
 
             &:hover {
-                color: var(--highlight-dark);
+                // color: var(--highlight-dark);
                 text-decoration: underline;
+            }
+            a{
+                color: unset;
+            }
+            .git-icon{
+                width: 35px;
+                height: 35px;
+                color: unset;
             }
         }
     }
