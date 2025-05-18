@@ -1,6 +1,6 @@
 import { faBriefcase, faHouseChimneyUser, faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect } from "react";
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Intro from '../intro/intro'
 import WorkEducation from '../work/workEducation';
@@ -8,17 +8,20 @@ import './layout.scss'
 import Projects from "../projects/projects";
 
 const Sidebar = () => {
-  const [isDarkMode, setDarkMode] = React.useState(true);
+  const [isLightMode, setLightMode] = React.useState(false);
 
-  const toggleDarkMode = (checked: boolean) => {
-    setDarkMode(checked);
-    if (!checked) {
+  useEffect(() => {
+    if (!isLightMode) {
       document.body.classList.add('dark-mode');
       document.documentElement.setAttribute("data-theme", "dark")
     } else {
       document.body.classList.remove('dark-mode');
       document.documentElement.setAttribute("data-theme", "light")
     }
+  }, [isLightMode])
+
+  const toggleDarkMode = (checked) => {
+    setLightMode(checked);
   };
   
   return (
@@ -36,7 +39,7 @@ const Sidebar = () => {
         <div className="dark-mode-switch">
           <DarkModeSwitch
             style={{ marginTop: '20px' }}
-            checked={isDarkMode}
+            checked={isLightMode}
             onChange={toggleDarkMode}
             size={40}
             sunColor="#edaa0e"
