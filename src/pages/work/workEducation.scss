@@ -1,5 +1,12 @@
 @import '../../variables';
 
+#workEducation{
+    // this css is just a jugaad.. breaking workEducation div into 2 columns: [VerticalTimeline component] + [10px empty column]
+    display: grid;
+    grid-template-columns: auto 10px; 
+}
+
+
 .vertical-timeline.vertical-timeline--animate {
     &::before {
         background-color: var(--timeline-color);

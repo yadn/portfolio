@@ -14,20 +14,9 @@
     svg {
       height: 2rem;
       width: 2rem;
-      color: #CDC9C3;
+      color: var(--text-primary);
     }
 
-    &.active {
-      svg {
-        color: #555555;
-      }
-    }
-    &:hover{
-      svg{
-        // opacity: 0;
-        color: #555555;
-      }
-    }
     margin: 30px;
   }
   .dark-mode-switch{

@@ -38,7 +38,7 @@ const projects = [
         title: 'Training Recurrent Attention Models (RAMs) on Handwritten Word Images',
         description: 'Implemented RAM on EMNIST dataset (handwritten character images) with a novel fisheye approach for generating input for the CNN network and improved test accuracy of the baseline approach. Tested RAM with fisheye approach on IAM dataset.',
         techStack: "Python, Pytorch",
-        githubLink: 'https://github.com/yadn/Mess-management-system',
+        githubLink: 'https://github.com/yadn/Training-RAM-on-handwritten-text-images',
     }
 ];
 

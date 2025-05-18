@@ -3,7 +3,6 @@ import EnphaseLogo from '../../assets/images/enphase'
 import Tata from '../../assets/images/tata'
 import IITB from "../../assets/images/iitb";
 import IITBHU from "../../assets/images/iitbhu"
-import Card from '../../components/card'
 import './workEducation.scss'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -14,11 +13,9 @@ const WorkEducation = () => {
   const params = new URLSearchParams(window.location.search);
   const layout = params.get('layout');
 
-
-
   return (
     <VerticalTimeline
-      layout={layout == '1' ? "1-column-left" : "2-columns"} >
+      layout={layout === '1' ? "1-column-left" : "2-columns"} >
       <VerticalTimelineElement
         className="vertical-timeline-element-main--enphase"
         date="2021 - Present" >
@@ -30,10 +27,14 @@ const WorkEducation = () => {
           <div className="icon-info--enphase"><EnphaseLogo /></div>
         </div>
         <ul>
-          <li>Implemented complex features in ReactJS for the Enphase homeowner app.</li>
-          <li>Integrated RESTful APIs and responses from IoT devices via MQTT protocol.</li>
-          <li>Developed adaptive UI components for mobile and web views.</li>
-          <li>Contributed to an application used by 2M+ customers worldwide.</li>
+          <li>Currently working as a full stack developer, primarily focusing on backend engineering</li>
+          <li>Added a logging feature that improved productivity and reduced debugging time by 80%</li>
+          <li>Optimized app launch time by 30% by reducing redundant API calls and rearchitecting the initialization workflow</li>
+          <li>Led the setup of 10 microservices in new <i>dev</i> and <i>integration</i> environments for development and QA testing, saving up to 2 hours of development time per developer</li>
+          <li>Reduced p95 latency of an API used to fetch bulk user notification preferences by 66%, improving asynchronous Resque jobs by approximately 90 seconds</li>
+          <li>Developed adaptive UI components for mobile and web views in the <a href="https://apps.apple.com/us/app/enphase-enlighten/id787415770?platform=iphone">Enphase Homeowner App</a>, used by over 2 million customers</li>
+          <li>Implemented an end-to-end local connectivity feature for IoT devices in the Enphase app, reducing customer complaints by 90%</li>
+          <li>Added a solar production forecasting feature with intuitive, easy-to-understand graphical presentation using the React-Vis library</li>
         </ul>
       </VerticalTimelineElement>
       {/* IITB Timeline Element */}
@@ -91,8 +92,6 @@ const WorkEducation = () => {
         </ul>
       </VerticalTimelineElement>
     </VerticalTimeline>
-
-
   )
 }
 
