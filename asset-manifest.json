@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bf01991e.css",
-    "main.js": "/portfolio/static/js/main.91eb1d8b.js",
+    "main.css": "/portfolio/static/css/main.5813f183.css",
+    "main.js": "/portfolio/static/js/main.5c5dcb22.js",
     "static/media/SF-Pro-Display-Regular.otf": "/portfolio/static/media/SF-Pro-Display-Regular.d95919824936a9bf4051.otf",
     "static/media/JetBrainsMono-Regular.ttf": "/portfolio/static/media/JetBrainsMono-Regular.93b40005892466035ab0.ttf",
     "static/media/iitbhu.png": "/portfolio/static/media/iitbhu.6ed51689c1346c85819a.png",
     "static/media/GoogleSans-Regular.ttf": "/portfolio/static/media/GoogleSans-Regular.bec0591b6a291c3ca895.ttf",
     "static/media/GoogleSans-Medium.ttf": "/portfolio/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/GoogleSans-Bold.ttf": "/portfolio/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
+    "static/media/Gel.otf": "/portfolio/static/media/Gel.d6c8d6254fcd62413302.otf",
     "static/media/SplineSansMono-Regular.ttf": "/portfolio/static/media/SplineSansMono-Regular.4dddb851647a68cdca1e.ttf",
     "index.html": "/portfolio/index.html",
-    "main.bf01991e.css.map": "/portfolio/static/css/main.bf01991e.css.map",
-    "main.91eb1d8b.js.map": "/portfolio/static/js/main.91eb1d8b.js.map"
+    "main.5813f183.css.map": "/portfolio/static/css/main.5813f183.css.map",
+    "main.5c5dcb22.js.map": "/portfolio/static/js/main.5c5dcb22.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf01991e.css",
-    "static/js/main.91eb1d8b.js"
+    "static/css/main.5813f183.css",
+    "static/js/main.5c5dcb22.js"
   ]
 }
